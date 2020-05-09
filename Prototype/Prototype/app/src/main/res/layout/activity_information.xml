@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ce_jaylocquiao.prototype.InformationActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/colorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="28dp"
+        android:hint="Color"
+        app:layout_constraintBottom_toTopOf="@+id/razerBlade1"
+        app:layout_constraintStart_toStartOf="@+id/laptopNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/laptopNameTextView" />
+
+    <EditText
+        android:id="@+id/laptopNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="24dp"
+        android:hint="Laptop Name"
+        app:layout_constraintBottom_toTopOf="@+id/colorTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="44dp"
+        android:onClick="editConfirmation"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/razerBlade1" />
+
+    <ImageButton
+        android:id="@+id/razerBlade1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginStart="63dp"
+        android:onClick="deleteImageButton"
+        app:layout_constraintBottom_toTopOf="@+id/editButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorTextView"
+        app:srcCompat="@drawable/razerblade1" />
+
+</android.support.constraint.ConstraintLayout>
